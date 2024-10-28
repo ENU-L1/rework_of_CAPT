@@ -1,0 +1,167 @@
+
+
+/* Header */
+
+body {
+  margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+div.flex-box {
+  display: flex;
+  align-items: center;
+}
+
+div.flex-column {
+    align-items: center;
+}
+
+div.flex-row {
+    padding: 0px;
+}
+
+header {
+  background-color: #fff;
+  color: #EE1B2E;
+  padding: 10px;
+  text-align: center;
+}
+
+nav.flex-row {
+    padding: 0px;
+    margin: 20px 0px;
+    color: red;
+}
+
+nav ul {
+  border-bottom: 1px solid #cccccc;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+nav ul:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+}
+
+a {
+    text-decoration: none;
+    color: #EE1B2E;
+}
+
+#logo {
+  height: auto;
+  padding: 5px 20px 60px 20px;
+}
+
+button {
+  display: block;
+  min-width: 80px;
+  margin: 10px;
+}
+
+
+  /*-------------------- HAMBURGER MENU ------------------------------*/
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger-icon {
+  display: block;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+  .flex-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  nav ul {
+    display: block;
+    margin: 5px 0;
+    margin-right: 0;
+  }
+
+  #logo {
+    max-width: 60%;
+    padding: 5px 20px 20px 20px;
+  }
+
+  .flex-box h2 {
+    margin-bottom: 10px;
+  }
+
+  button {
+    display: block;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+  }
+  
+  .hamburger-icon {
+      font-size: 1.5em;
+  }
+  
+  /*----------------------- HAMBURGER MENU ---------------------------*/
+  nav.flex-row ul {
+    display: none;
+  }
+  
+  .hamburger-menu {
+  display: block;
+  }
+  
+  .hamburger-menu.active nav.flex-row ul {
+  display: block;
+  }
+  
+  .flex-row.active ul {
+    display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  
+  h2 {
+    font-size: 1em;
+  }
+  
+  nav {
+    font-size: .8em;
+  }
+  
+  #logo {
+    max-width: 50%;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+  
+}
